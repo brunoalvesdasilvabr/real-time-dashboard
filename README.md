@@ -11,12 +11,14 @@ The Inventory Dashboard is a simple Angular application that allows users to man
 - **Edit Items**: Users can edit existing inventory items.
 - **Delete Items**: Users can delete inventory items from the list.
 - **Items persistency**:Right now list is not persisted and has no backend, it's only a front end app Managed through RXJS and Observables.
+  **Unit Tests**:Unit test 100% for most used components and services
 
 ## Technologies Used
 
 - **Angular**: A platform for building mobile and desktop web applications.
 - **TypeScript**: A superset of JavaScript that compiles to plain JavaScript.
 - **SCSS**: A preprocessor scripting language that is interpreted or compiled into CSS.
+- **Karma-jasmine**: Used for Unit tests.
 
 ## Getting Started
 
@@ -31,9 +33,12 @@ Before you begin, ensure you have the following installed on your machine:
 ### Installation
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/brunoalvesdasilvabr/real-time-dashboard
    cd real-time-dashboard
    npm install: Installing dependencies
    ng serve: running the application
+   npm run test: running the Unit tests
+
    ```
