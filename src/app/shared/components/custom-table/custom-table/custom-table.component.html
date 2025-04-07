@@ -1,10 +1,11 @@
 <h2>{{ tableTitle }}</h2>
-<p-table [value]="items" [tableStyle]="{ 'min-width': '50rem' }">
+<p-table [value]="items">
   <ng-template #header>
     <tr>
       <th>Id</th>
       <th>Name</th>
       <th>Quantity</th>
+      <th></th>
     </tr>
   </ng-template>
   <ng-template #body let-item>
@@ -13,8 +14,10 @@
       <td>{{ item.name }}</td>
       <td>{{ item.quantity }}</td>
       <td>
-        <button (click)="edit(item)">Edit</button>
-        <button (click)="deleteItem(item.id)">Delete</button>
+        <button class="edit-button" (click)="edit(item)">Edit</button>
+        <button class="delete-button" (click)="deleteItem(item.id)">
+          Delete
+        </button>
       </td>
     </tr>
   </ng-template>
