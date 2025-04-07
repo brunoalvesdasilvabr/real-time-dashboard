@@ -1,59 +1,39 @@
-# RealTimeDashboard
+# Inventory Dashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+## Overview
 
-## Development server
+The Inventory Dashboard is a simple Angular application that allows users to manage inventory items with CRUD (Create, Read, Update, Delete) operations. This application provides a user-friendly interface for adding, editing, and deleting inventory items, making it easy to keep track of stock levels.
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+- **Add New Items**: Users can add new inventory items with a name and quantity.
+- **View Items**: A list of all inventory items is displayed in a table format.
+- **Edit Items**: Users can edit existing inventory items.
+- **Delete Items**: Users can delete inventory items from the list.
+- **Items persistency**:Right now list is not persisted and has no backend, it's only a front end app Managed through RXJS and Observables.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Technologies Used
 
-## Code scaffolding
+- **Angular**: A platform for building mobile and desktop web applications.
+- **TypeScript**: A superset of JavaScript that compiles to plain JavaScript.
+- **SCSS**: A preprocessor scripting language that is interpreted or compiled into CSS.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Getting Started
 
-```bash
-ng generate component component-name
-```
+### Prerequisites
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Before you begin, ensure you have the following installed on your machine:
 
-```bash
-ng generate --help
-```
+- [Node.js](https://nodejs.org/) (version 12 or later)
+- [npm](https://www.npmjs.com/) (Node package manager)
+- [Angular CLI](https://angular.io/cli) (install globally using `npm install -g @angular/cli`)
 
-## Building
+### Installation
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/brunoalvesdasilvabr/real-time-dashboard
+   cd real-time-dashboard
+   npm install: Installing dependencies
+   ng serve: running the application
+   ```

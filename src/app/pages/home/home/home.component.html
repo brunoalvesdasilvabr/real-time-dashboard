@@ -1,0 +1,21 @@
+<h1>{{ formType }}</h1>
+
+<form [formGroup]="InventoryForm" (ngSubmit)="onSubmit()">
+  <input pInputText formControlName="name" placeholder="Type the Name" />
+  <p-inputnumber
+    formControlName="quantity"
+    type="number"
+    placeholder="Type the quantity"
+  />
+  <p-button
+    [disabled]="!InventoryForm.valid"
+    type="submit"
+    [label]="formType"
+  />
+</form>
+
+<app-custom-table
+  (deleteItemEmitter)="deleteItem($event)"
+  (editItemEmitter)="edit($event)"
+  [tableTitle]="'Inventory Dashboard'"
+></app-custom-table>
